@@ -1,21 +1,16 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        //Getting input from user
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter the size:");
-        int size = scanner.nextInt();
-        int[] arr = new int[size];
-        
-        for (int i = 0; i<arr.length; i++){
-            arr[i] = scanner.nextInt();
+        //Array of objects
+        String [] str = new String[4];
+        for (int i =0; i<str.length; i++){
+            str[i]=scanner.next();
+        }
+        System.out.println(Arrays.toString(str));
         }
 
-        System.out.println("Printing array values: ");
-        for (int i = 0; i<arr.length; i++){
-            System.out.println(arr[i]);
-        }
 
     }
-}
